@@ -1,0 +1,9 @@
+{
+  "name": "redonkulizer.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "author": "https://kolezyn.ski",
+  "license": "ISC"
+}
