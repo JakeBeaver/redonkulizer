@@ -1,8 +1,8 @@
-import compile from './redonkulizer.js'
+import './meta-redonkulizer.js'
 
 let code = `console.log("Hello world!")`
 
-let compiled = compile(code);
+let compiled = global.redonkulize(code);
 
 eval(compiled);
 

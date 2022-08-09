@@ -87,4 +87,12 @@ const compile = (code) => {
     return executable;
 }
 
+if (typeof global !== 'undefined') {
+    global.redonkulize = compile
+}
+
+if (typeof window !== 'undefined') {
+    window.redonkulize = compile
+}
+
 export default compile

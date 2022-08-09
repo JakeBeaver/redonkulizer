@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "scripts": {
+    "selfcompile" : "node selfcompile.js "
+  },
   "author": "https://kolezyn.ski",
   "license": "ISC"
 }
