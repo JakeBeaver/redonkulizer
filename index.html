@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="./meta-redonkulizer.js"></script>
+
+<textarea id="text">alert("Hello World!")</textarea>
+<button onclick="compile()">Compile</button>
+
+<textarea style="height:80%" id="code" disabled></textarea>
+<button onclick="execute()">Execute</button>
+
+<script>
+    const code = document.getElementById("text");
+    const redonkulousnes = document.getElementById("code");
+
+    const compile = () => redonkulousnes.value = window.redonkulize(code.value);
+    const execute = () => eval(redonkulousnes.value);
+
+    compile();
+</script>
