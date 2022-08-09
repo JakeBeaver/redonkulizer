@@ -53,7 +53,6 @@ letters.b = letterOrdinal(11);
 letters.h = letterOrdinal(17);
 letters.v = letterOrdinal(31);
 
-letters.C = `[][${fromString("at")}][${fromString("constructor")}](${fromString("return escape")})()(([]+[])[${fromString("bold")}]())[${number(2)}]`
 
 letters["{"] = `([]+[][${fromString("at")}])[${number(14)}]`;
 letters["}"] = `([]+[][${fromString("at")}])[${number(30)}]`;
@@ -64,7 +63,10 @@ letters["."] = `([]+(+(${fromString("11e20")})))[${number(1)}]`
 letters["+"] = `([]+(+(${fromString("11e20")})))[${number(4)}]`;
 letters['"'] = `([]+[])[${fromString("fontcolor")}]()[${number(12)}]`;
 
+letters.C = `[][${fromString("at")}][${fromString("constructor")}](${fromString("return btoa")})()(${fromString("t.")})[${number(1)}]`
+
 const decoder = `function f(t){return('').constructor.fromCharCode(t)}`;
+
 const charEncoder = (n) => `${fromString('f(')}+(${number(n.charCodeAt())})+${fromString(')')}`;
 
 const encoder = (str) => {
