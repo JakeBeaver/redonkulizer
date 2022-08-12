@@ -58,6 +58,8 @@ letters["{"] = `([]+[][${fromString("at")}])[${number(14)}]`;
 letters["}"] = `([]+[][${fromString("at")}])[${number(30)}]`;
 letters["("] = `([]+[][${fromString("at")}])[${number(11)}]`;
 letters[")"] = `([]+[][${fromString("at")}])[${number(12)}]`;
+letters["["] = `([]+[][${fromString("at")}])[${number(16)}]`;
+letters["]"] = `([]+[][${fromString("at")}])[${number(28)}]`;
 
 letters["."] = `([]+(+(${fromString("11e20")})))[${number(1)}]`
 letters["+"] = `([]+(+(${fromString("11e20")})))[${number(4)}]`;
@@ -65,7 +67,7 @@ letters['"'] = `([]+[])[${fromString("fontcolor")}]()[${number(12)}]`;
 
 letters.C = `[][${fromString("at")}][${fromString("constructor")}](${fromString("return btoa")})()(${fromString("t.")})[${number(1)}]`
 
-const decoder = `function f(t){return('').constructor.fromCharCode(t)}`;
+const decoder = `function f(t){return([]+[]).constructor.fromCharCode(t)}`;
 
 const charEncoder = (n) => `${fromString('f(')}+(${number(n.charCodeAt())})+${fromString(')')}`;
 
